@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rent a Hero </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="HeaderNav">
+            <div class="HeaderNav__LogoHamburgerBox">
+                <a class="HeaderNav__LogoHamburgerBox__linkLogo">
+                    <img src="images/logo.png" class="HeaderNav__LogoHamburgerBox_Logo" alt="logo"></a>
+                <div class="HeaderNav__iconHamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="HeaderNav__List">
+                <li class="HeaderNav__List--link " id="dodaj"><a>DODAJ HEROSA</a></li>
+                <li class="HeaderNav__List--link"><a>EDYTUJ HEROSA</a></li>
+                <li class="HeaderNav__List--link"><a>USUŃ HEROSA</a></li>
+                <li class="HeaderNav__List--link"><a>WYCZYŚĆ BAZĘ</a></li>
+                <li class="HeaderNav__List--link"><a>WCZYTAJ HERSOSÓW</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="AddHero off">
+            <form class="AddHero__form" method="post">
+                Doddaj Herosa
+                <input type="text" class="form__name" placeholder="Nazwa Bohatera" maxlength="25" required />
+                <input type="text" class="form__image" placeholder="Adres URL zdjecia" required />
+                <input type="number" class="form__price" placeholder="Cena wyjanmu /h" min="1" max="999999" required />
+                <textarea placeholder="Opis Nohatera" class="form__description" maxlength="140" required></textarea>
+                <button type="submit" class="AddHero__buttonForm">Submit</button>
+            </form>
+        </section>
+
+
+        <section class="basket ">
+            <div class="basket__Summary">
+                <span class="basket_Summary__Title basket_Summary__Title__underline">Koszyk</span>
+                <span class="basket_Summary__Title ">Do zaplaty:<span class="basket_Summary__Title priceRed"></span>
+                </span>
+            </div>
+            <div class="basket__Products">
+            </div>
+            <img src="images/scroll.png" alt="scroll horizontal cursor" class=basket__imgScroll>
+        </section>
+
+
+        <section class="heroesList">
+            <div class="modal">
+            </div>
+        </section>
+    </main>
+    <footer>
+        Need a Hero-Pure JS/CSS Aplikacja do ćwiczenia nabytej wiedzy o JavaScript
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
